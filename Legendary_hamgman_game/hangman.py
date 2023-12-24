@@ -6,13 +6,13 @@ def get_word():
 
 
 def display_word(word, guessed_letter):
-    display_word=""
+    displayed_word = ""
     for letter in word:
         if letter in guessed_letter:
-            display_word += guessed_letter
+            displayed_word += letter
         else:
-            display_word += "_"
-    print(display_word)
+            displayed_word += "_"
+    print(displayed_word)
 
 def hangman():
     print("Welcome to Hangman")
